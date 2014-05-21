@@ -170,6 +170,7 @@ class BitmapTest extends Sprite
 	}
 	
 	function remove_click(_) {
+		if (numBunnies == 0) return;
 		var less = numBunnies - incBunnies;
 		var bunny;
 		var bitmap:Bitmap;
